@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truckzone Maceió | O Melhor Food Park</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #000000;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #FFB800;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            color: #FFB800;
+        }
+
+        .insta-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid #333;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .botoes-hero {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: opacity 0.3s;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .btn-maps {
+            background-color: #FFB800;
+            color: #000;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #fff;
+        }
+
+        /* Destaques */
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            color: #FFB800;
+            margin: 40px 0 20px 0;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .features-container {
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .feature-card {
+            background-color: #1f1f1f;
+            padding: 25px 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            border-bottom: 3px solid #FFB800;
+        }
+
+        .feature-card h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #000;
+            color: #666;
+            font-size: 13px;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
+
+        @media (min-width: 600px) {
+            .feature-card {
+                width: 45%;
+            }
+            .botoes-hero {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">Truck<span>zone</span></div>
+        <a href="https://www.instagram.com/truckzonemaceio/" class="insta-link" target="_blank">Instagram</a>
+    </header>
+
+    <section class="hero">
+        <h1>O Melhor Food Park do Nordeste!</h1>
+        <p>Mais de 40 operações, música ao vivo, espaço kids e pet friendly. O lugar para um rolê perfeito em Maceió.</p>
+        
+        <div class="botoes-hero">
+            <a href="https://maps.app.goo.gl/UiGNWVcb9gKaUyHf8" class="btn btn-maps" target="_blank">Como Chegar</a>
+            <a href="https://wa.me/5582993310450" class="btn btn-whatsapp" target="_blank">Fale no WhatsApp</a>
+        </div>
+    </section>
+
+    <h2 class="section-title">O que você encontra aqui?</h2>
+    
+    <section class="features-container">
+        <div class="feature-card">
+            <h3>🍔 Mais de 40 Operações</h3>
+            <p>De hambúrgueres artesanais a comidas exóticas. Tem opção para todo mundo!</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🎵 Música ao Vivo</h3>
+            <p>Programação musical de qualidade para animar o seu final de semana.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🎠 Espaço Kids e Games</h3>
+            <p>Diversão garantida para a criançada enquanto os pais aproveitam.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🐾 Pet Friendly</h3>
+            <p>Seu melhor amigo é bem-vindo! O espaço é totalmente preparado para ele.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Truckzone Maceió. Todos os direitos reservados.</p>
+        <p>Siga no Instagram: @truckzonemaceio</p>
+    </footer>
+
+</body>
+</html>
